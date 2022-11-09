@@ -31,17 +31,17 @@
     var questionSource = [
         {
             question: "Questions 1 : Commonly used data types DO NOT include:",
-            choices: ["a. strings", "b. booleans", "c. alerts", "d. numbers"],
+            choices: ["a. Strings", "b. Booleans", "c. Alerts", "d. Numbers"],
             answer: "c"
         },
         {
             question: "Questions 2 : String values must be enclosed within _____ when being assigned to variables.",
-            choices: ["a. commas", "b. curly brackets", "c. quotes", "d. parenthesis"],
+            choices: ["a. Commas", "b. Curly Brackets", "c. Quotes", "d. Parenthesis"],
             answer: "c"
         },
         {
             question: "Questions 3 : To see if two variables are equal in an if / else statement you would use ____.",
-            choices: ["a. =", "b. ==", "c. 'equals'", "d. !="],
+            choices: ["a. =", "b. ==", "c. 'Equals'", "d. !="],
             answer: "b"
         },
         {
@@ -56,7 +56,7 @@
         },
         {
             question: "Questions 6 : Which event occurs when the user clicks on an HTML element?",
-            choices: ["a. onclick", "b. onchange", "c. onmouseover", "d. onmouseclick"],
+            choices: ["a. Onclick", "b. Onchange", "c. Onmouseover", "d. Onmouseclick"],
             answer: "a"
         },
         {
@@ -66,7 +66,7 @@
         },
         {
             question: "Questions 8 : The first index of an array is ____.",
-            choices: ["a. 0", "b. 1", "c. 8", "d. any"],
+            choices: ["a. 0", "b. 1", "c. 8", "d. Any"],
             answer: "a"
         }
     ];
@@ -189,7 +189,7 @@
         }
     };
     
-    // sort score and ranking the highscore list
+    // sort score and ranking
     function sort () {
         var unsortedList = getScore();
         if (getScore == null ){
@@ -201,7 +201,7 @@
         return unsortedList;
     }};
     
-    // push new score and initial to the local storage
+    // push to the local storage
     function addItem (n) {
         var addedList = getScore();
         addedList.push(n);
@@ -217,7 +217,7 @@
         renderScore();
     }
     
-    /* Add event listeners*/
+    // Add event listeners
     // startbtn to start the quiz
     startBtn.addEventListener("click", startQuiz);
     
